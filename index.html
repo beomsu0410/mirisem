@@ -4,10 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>미리셈가계부 · 나갈 돈을 미리 셈하는 아이폰 가계부</title>
-<meta name="description" content="쓸 수 있는 돈이 얼마인지 먼저 알려주는 아이폰 가계부. 모든 기록은 기기 안에만 저장됩니다.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<meta name="description" content="쓸 수 있는 돈이 얼마인지 먼저 알려주는 아이폰 가계부. 기록은 기기 안에 저장되고, 동기화를 켜면 개발자도 읽을 수 없게 암호화해 보관합니다.">
 <style>
 :root{
   --bg:#F7F8F6; --surface:#FFFFFF; --ink:#171B18; --ink2:#3D453F;
@@ -23,7 +20,7 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--bg); color:var(--ink);
-  font-family:'IBM Plex Sans KR',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
   font-size:16px; line-height:1.78; -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:720px; margin:0 auto; padding-inline:22px; padding-block:72px 96px}
@@ -66,7 +63,7 @@ footer a{color:var(--muted)}
   <span class="mark">미리셈가계부</span>
   <h1>나갈 돈을 미리 셈해서<br>쓸 수 있는 돈을 먼저 알려주는 가계부</h1>
   <p class="lede">수입에서 정기지출과 저축을 먼저 빼고, 이번 달 실제로 쓸 수 있는 금액을 보여줍니다.
-  기록은 전부 아이폰 안에만 저장됩니다.</p>
+  기록은 아이폰 안에 저장되고, 원하면 암호화 동기화로 다른 기기·가족과 이어집니다.</p>
   <span class="status">App Store 출시 준비 중</span>
 </header>
 
@@ -85,14 +82,15 @@ footer a{color:var(--muted)}
   <div class="qa">
     <div>
       <b>기록한 내용이 밖으로 전송되나요?</b>
-      <p>아니요. 입력한 내용은 아이폰 안에만 저장되고, 개발자도 볼 수 없습니다.
-      앱이 밖으로 무언가를 보내는 때는 간편 등록 인식이 틀려 직접 '인식 오류 신고'를 보낼 때뿐이며,
-      이때도 가계부 기록은 보내지 않습니다. 보내기 전에 보낼 내용을 보여 주고, 캡처 속 이름·카드번호·잔액은 가릴 수 있습니다.
+      <p>동기화를 켜지 않으면 어디로도 보내지 않습니다. 동기화·공동 가계부를 켜면 기기에서 암호화한 사본만 서버에 보관되고,
+      열쇠가 기기와 복구 코드에만 있어 개발자도 볼 수 없습니다.
+      그 밖에 밖으로 보내는 때는 직접 '인식 오류 신고'를 보낼 때뿐이며, 이때도 가계부 기록은 보내지 않습니다.
+      보내기 전에 보낼 내용을 보여 주고, 캡처 속 이름·카드번호·잔액은 가릴 수 있습니다.
       자세한 내용은 <a href="privacy/">개인정보 처리방침</a>에 있습니다.</p>
     </div>
     <div>
       <b>기기를 바꾸면 기록이 옮겨지나요?</b>
-      <p>현재 버전은 기기 안에만 저장하므로 자동으로 옮겨지지 않습니다.</p>
+      <p>동기화를 켜 두었다면 새 기기에서 복구 코드 12낱말을 넣어 되살립니다(구독 기능, 사진 제외). 동기화 없이도 '전체 백업 파일'로 옮길 수 있습니다(복원은 구독 기능).</p>
     </div>
     <div>
       <b>구독은 어떻게 해지하나요?</b>
@@ -114,7 +112,7 @@ footer a{color:var(--muted)}
 
 <footer>
   <a href="privacy/">개인정보 처리방침</a>
-  <span>최종 수정 2026-09-23</span>
+  <span>최종 수정 2026-10-12</span>
 </footer>
 
 </div>
